@@ -1,0 +1,28 @@
+{
+  "name": "begemot",
+  "version": "1.0.0",
+  "description": "TITLE:  Foodee - One Page Responsive Free HTML5 template",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run scss-compile",
+    "scss-compile": "node-sass -rw sass/ -o css/",
+    "watch": "npm run scss-compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tendersUA/tendersUA.github.io.git"
+  },
+  "author": "Olexandr YAkovenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tendersUA/tendersUA.github.io/issues"
+  },
+  "homepage": "https://github.com/tendersUA/tendersUA.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^1.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
