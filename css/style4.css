@@ -67,8 +67,12 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-backface-visibility: hidden; }
   .edge--bottom:after {
     bottom: 0;
-    transform: skewY(-1.5deg);
-    transform-origin: 100%; }
+    -webkit-transform: skewY(-1.5deg);
+        -ms-transform: skewY(-1.5deg);
+            transform: skewY(-1.5deg);
+    -webkit-transform-origin: 100%;
+        -ms-transform-origin: 100%;
+            transform-origin: 100%; }
 
 .edge--bottom--reverse {
   position: relative;
@@ -85,8 +89,12 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-backface-visibility: hidden; }
   .edge--bottom--reverse:after {
     bottom: 0;
-    transform: skewY(1.5deg);
-    transform-origin: 0 100%; }
+    -webkit-transform: skewY(1.5deg);
+        -ms-transform: skewY(1.5deg);
+            transform: skewY(1.5deg);
+    -webkit-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+            transform-origin: 0 100%; }
 
 .edge--top {
   position: relative;
@@ -103,8 +111,12 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-backface-visibility: hidden; }
   .edge--top:before {
     top: 0;
-    transform: skewY(1.5deg);
-    transform-origin: 100% 0; }
+    -webkit-transform: skewY(1.5deg);
+        -ms-transform: skewY(1.5deg);
+            transform: skewY(1.5deg);
+    -webkit-transform-origin: 100% 0;
+        -ms-transform-origin: 100% 0;
+            transform-origin: 100% 0; }
 
 .edge--top--reverse {
   position: relative;
@@ -121,8 +133,12 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-backface-visibility: hidden; }
   .edge--top--reverse:before {
     top: 0;
-    transform: skewY(-1.5deg);
-    transform-origin: 0 0; }
+    -webkit-transform: skewY(-1.5deg);
+        -ms-transform: skewY(-1.5deg);
+            transform: skewY(-1.5deg);
+    -webkit-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+            transform-origin: 0 0; }
 
 .edge--both {
   position: relative;
@@ -139,12 +155,20 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-backface-visibility: hidden; }
   .edge--both:before {
     top: 0;
-    transform: skewY(1.5deg);
-    transform-origin: 100% 0; }
+    -webkit-transform: skewY(1.5deg);
+        -ms-transform: skewY(1.5deg);
+            transform: skewY(1.5deg);
+    -webkit-transform-origin: 100% 0;
+        -ms-transform-origin: 100% 0;
+            transform-origin: 100% 0; }
   .edge--both:after {
     bottom: 0;
-    transform: skewY(-1.5deg);
-    transform-origin: 100%; }
+    -webkit-transform: skewY(-1.5deg);
+        -ms-transform: skewY(-1.5deg);
+            transform: skewY(-1.5deg);
+    -webkit-transform-origin: 100%;
+        -ms-transform-origin: 100%;
+            transform-origin: 100%; }
 
 .edge--both--reverse {
   position: relative;
@@ -161,12 +185,20 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-backface-visibility: hidden; }
   .edge--both--reverse:before {
     top: 0;
-    transform: skewY(-1.5deg);
-    transform-origin: 0 0; }
+    -webkit-transform: skewY(-1.5deg);
+        -ms-transform: skewY(-1.5deg);
+            transform: skewY(-1.5deg);
+    -webkit-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+            transform-origin: 0 0; }
   .edge--both--reverse:after {
     bottom: 0;
-    transform: skewY(1.5deg);
-    transform-origin: 0 0; }
+    -webkit-transform: skewY(1.5deg);
+        -ms-transform: skewY(1.5deg);
+            transform: skewY(1.5deg);
+    -webkit-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+            transform-origin: 0 0; }
 
 #fh5co-header {
   position: absolute;
@@ -180,7 +212,6 @@ h1, h2, h3, h4, h5, h6 {
       margin-top: 0;
       background: #fff;
       -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
-      -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
       -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
       box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1); }
       #fh5co-header .navbar-brand {
@@ -201,7 +232,8 @@ h1, h2, h3, h4, h5, h6 {
         #fh5co-header #navbar li.active a span:before {
           visibility: visible;
           -webkit-transform: scaleX(1);
-          transform: scaleX(1); } }
+          -ms-transform: scaleX(1);
+              transform: scaleX(1); } }
   #fh5co-header .navbar {
     padding-bottom: 0;
     margin-bottom: 0; }
@@ -225,13 +257,9 @@ h1, h2, h3, h4, h5, h6 {
         background-color: rgba(255, 255, 255, 0.5);
         visibility: hidden;
         -webkit-transform: scaleX(0);
-        -moz-transform: scaleX(0);
         -ms-transform: scaleX(0);
-        -o-transform: scaleX(0);
         transform: scaleX(0);
         -webkit-transition: all 0.3s ease-in-out 0s;
-        -moz-transition: all 0.3s ease-in-out 0s;
-        -ms-transition: all 0.3s ease-in-out 0s;
         -o-transition: all 0.3s ease-in-out 0s;
         transition: all 0.3s ease-in-out 0s; }
     #fh5co-header #navbar li a:hover {
@@ -239,9 +267,7 @@ h1, h2, h3, h4, h5, h6 {
       #fh5co-header #navbar li a:hover span:before {
         visibility: visible;
         -webkit-transform: scaleX(1);
-        -moz-transform: scaleX(1);
         -ms-transform: scaleX(1);
-        -o-transform: scaleX(1);
         transform: scaleX(1); }
   #fh5co-header #navbar li.active a {
     background: transparent;
@@ -250,7 +276,8 @@ h1, h2, h3, h4, h5, h6 {
     #fh5co-header #navbar li.active a span:before {
       visibility: visible;
       -webkit-transform: scaleX(1);
-      transform: scaleX(1); }
+      -ms-transform: scaleX(1);
+          transform: scaleX(1); }
   #fh5co-header .navbar-brand {
     float: left;
     display: block;
@@ -262,7 +289,6 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed !important;
     background: #fff;
     -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
     -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
     margin-top: 0px;
@@ -283,14 +309,13 @@ h1, h2, h3, h4, h5, h6 {
       #fh5co-header.navbar-fixed-top #navbar li.active a span:before {
         visibility: visible;
         -webkit-transform: scaleX(1);
-        transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
         background-color: #A4D792; }
   #fh5co-header .navbar-default {
     border: transparent;
     background: transparent;
     -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -ms-border-radius: 0px;
     border-radius: 0px; }
     @media screen and (max-width: 768px) {
       #fh5co-header .navbar-default {
@@ -312,7 +337,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #fh5co-home {
   background-color: transparent;
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-attachment: fixed;
   position: relative;
   width: 100%;
@@ -335,6 +361,8 @@ h1, h2, h3, h4, h5, h6 {
     /* Android 2.3 */
     background-image: -webkit-linear-gradient(top left, #21825c 0%, #a4d792 100%);
     /* IE10+ */
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#21825c), to(#a4d792));
+    background-image: -o-linear-gradient(top left, #21825c 0%, #a4d792 100%);
     background-image: linear-gradient(to bottom right, #21825c 0%, #a4d792 100%);
     background-image: -ms-linear-gradient(top left, #21825c 0%, #a4d792 100%); }
   #fh5co-home, #fh5co-home .text-wrap {
@@ -397,11 +425,11 @@ h1, h2, h3, h4, h5, h6 {
       padding-bottom: 3em; } }
   #fh5co-intro > div {
     display: -webkit-box;
-    display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap; }
   #fh5co-intro .fh5co-block {
@@ -414,13 +442,16 @@ h1, h2, h3, h4, h5, h6 {
     padding: 40px;
     background: #fff;
     -webkit-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
-    -moz-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
     -ms-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
     -o-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
     box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
     z-index: 7;
-    flex-grow: 1;
-    background-size: cover;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-background-size: cover;
+            background-size: cover;
     position: relative;
     backgroun-repeat: no-repeat; }
     @media screen and (max-width: 768px) {
@@ -496,8 +527,6 @@ h1, h2, h3, h4, h5, h6 {
     display: table;
     text-align: center;
     -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
     border-radius: 50%; }
     .watch-video .btn-video:hover, .watch-video .btn-video:focus, .watch-video .btn-video:active {
       text-decoration: none; }
@@ -513,9 +542,7 @@ h1, h2, h3, h4, h5, h6 {
       transition: 0.3s; }
     .watch-video .btn-video:hover i, .watch-video .btn-video:focus i {
       -webkit-transform: scale(1.1);
-      -moz-transform: scale(1.1);
       -ms-transform: scale(1.1);
-      -o-transform: scale(1.1);
       transform: scale(1.1); }
 
 #fh5co-services, #fh5co-testimonials, #fh5co-counters, #fh5co-work, #fh5co-contact, #fh5co-about {
@@ -538,6 +565,8 @@ h1, h2, h3, h4, h5, h6 {
   /* Android 2.3 */
   background-image: -webkit-linear-gradient(top left, #21825c 0%, #a4d792 100%);
   /* IE10+ */
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#21825c), to(#a4d792));
+  background-image: -o-linear-gradient(top left, #21825c 0%, #a4d792 100%);
   background-image: linear-gradient(to bottom right, #21825c 0%, #a4d792 100%);
   background-image: -ms-linear-gradient(top left, #21825c 0%, #a4d792 100%);
   overflow: hidden;
@@ -586,7 +615,8 @@ h1, h2, h3, h4, h5, h6 {
   background: #A4D792;
   overflow: hidden;
   background-color: transparent;
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-attachment: fixed;
   position: relative;
   width: 100%;
@@ -675,8 +705,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     position: relative;
     -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -ms-border-radius: 7px;
     border-radius: 7px; }
     #fh5co-testimonials .box-testimony blockquote:after {
       content: "";
@@ -707,8 +735,6 @@ h1, h2, h3, h4, h5, h6 {
       #fh5co-testimonials .box-testimony .author > figure img {
         width: 60px;
         -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
         border-radius: 50%; }
     #fh5co-testimonials .box-testimony .author p {
       float: left;
@@ -730,6 +756,8 @@ h1, h2, h3, h4, h5, h6 {
   /* Android 2.3 */
   background-image: -webkit-linear-gradient(top left, #21825c 0%, #a4d792 100%);
   /* IE10+ */
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#21825c), to(#a4d792));
+  background-image: -o-linear-gradient(top left, #21825c 0%, #a4d792 100%);
   background-image: linear-gradient(to bottom right, #21825c 0%, #a4d792 100%);
   background-image: -ms-linear-gradient(top left, #21825c 0%, #a4d792 100%); }
   #fh5co-work a {
@@ -773,8 +801,6 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 9;
     margin-bottom: 30px;
     -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -ms-border-radius: 7px;
     border-radius: 7px;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -799,7 +825,6 @@ h1, h2, h3, h4, h5, h6 {
         font-weight: 400; }
     #fh5co-work .fh5co-project-item:hover, #fh5co-work .fh5co-project-item:focus {
       -webkit-box-shadow: 7px 14px 42px 3px rgba(0, 0, 0, 0.4);
-      -moz-box-shadow: 7px 14px 42px 3px rgba(0, 0, 0, 0.4);
       -ms-box-shadow: 7px 14px 42px 3px rgba(0, 0, 0, 0.4);
       -o-box-shadow: 7px 14px 42px 3px rgba(0, 0, 0, 0.4);
       box-shadow: 7px 14px 42px 3px rgba(0, 0, 0, 0.4);
@@ -831,8 +856,6 @@ h1, h2, h3, h4, h5, h6 {
       width: 120px;
       border: 2px solid #f2f2f2;
       -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
       border-radius: 50%; }
   .fh5co-person h3 {
     margin-bottom: 0px; }
@@ -842,7 +865,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px; }
 
 .form-control {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   background: transparent;
   border: 2px solid rgba(0, 0, 0, 0.1);
   height: 54px;
@@ -850,7 +874,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
   .form-control:active, .form-control:focus {
     outline: none;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     border-color: #A4D792; }
 
 .btn {
@@ -952,6 +977,8 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     text-indent: -55px;
     background: #A4D792;
+    -webkit-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
     transition: all .2s ease-out; }
     .fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after {
       content: '';
@@ -982,17 +1009,13 @@ h1, h2, h3, h4, h5, h6 {
 .fh5co-nav-toggle.active i::before {
   top: 0;
   -webkit-transform: rotateZ(45deg);
-  -moz-transform: rotateZ(45deg);
   -ms-transform: rotateZ(45deg);
-  -o-transform: rotateZ(45deg);
   transform: rotateZ(45deg); }
 
 .fh5co-nav-toggle.active i::after {
   bottom: 0;
   -webkit-transform: rotateZ(-45deg);
-  -moz-transform: rotateZ(-45deg);
   -ms-transform: rotateZ(-45deg);
-  -o-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg); }
 
 .fh5co-nav-toggle {
@@ -1029,8 +1052,6 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     vertical-align: middle;
     -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
     border-radius: 50%;
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
@@ -1055,7 +1076,8 @@ h1, h2, h3, h4, h5, h6 {
     border: none !important;
     border: 2px solid transparent !important; }
     .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
-      box-shadow: none;
+      -webkit-box-shadow: none;
+              box-shadow: none;
       background: #A4D792; }
   .btn:hover, .btn:active, .btn:focus {
     background: #393e46 !important;
@@ -1094,8 +1116,6 @@ h1, h2, h3, h4, h5, h6 {
         background: #A4D792;
         color: #fff;
         -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
         border-radius: 50%; }
       .social li a:hover {
         background: #393e46 !important; }
@@ -1106,8 +1126,6 @@ h1, h2, h3, h4, h5, h6 {
     background: #A4D792;
     color: #fff;
     -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
     border-radius: 50%; }
 
 #map {
@@ -1124,7 +1142,6 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-backface-visibility: hidden;
   /* ideally, transition speed should match zoom duration */
   -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
 

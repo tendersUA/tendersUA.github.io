@@ -63,7 +63,6 @@ h1, h2, h3, h4, h5, h6 {
       margin-top: 0;
       background: #fff;
       -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
-      -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
       -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
       box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1); }
       #fh5co-header .navbar-brand {
@@ -84,7 +83,8 @@ h1, h2, h3, h4, h5, h6 {
         #fh5co-header #navbar li.active a span:before {
           visibility: visible;
           -webkit-transform: scaleX(1);
-          transform: scaleX(1); } }
+          -ms-transform: scaleX(1);
+              transform: scaleX(1); } }
   #fh5co-header .navbar {
     padding-bottom: 0;
     margin-bottom: 0; }
@@ -106,13 +106,9 @@ h1, h2, h3, h4, h5, h6 {
         background-color: #2185d5;
         visibility: hidden;
         -webkit-transform: scaleX(0);
-        -moz-transform: scaleX(0);
         -ms-transform: scaleX(0);
-        -o-transform: scaleX(0);
         transform: scaleX(0);
         -webkit-transition: all 0.3s ease-in-out 0s;
-        -moz-transition: all 0.3s ease-in-out 0s;
-        -ms-transition: all 0.3s ease-in-out 0s;
         -o-transition: all 0.3s ease-in-out 0s;
         transition: all 0.3s ease-in-out 0s; }
     #fh5co-header #navbar li a:hover {
@@ -120,9 +116,7 @@ h1, h2, h3, h4, h5, h6 {
       #fh5co-header #navbar li a:hover span:before {
         visibility: visible;
         -webkit-transform: scaleX(1);
-        -moz-transform: scaleX(1);
         -ms-transform: scaleX(1);
-        -o-transform: scaleX(1);
         transform: scaleX(1); }
   #fh5co-header #navbar li.active a {
     background: transparent;
@@ -131,7 +125,8 @@ h1, h2, h3, h4, h5, h6 {
     #fh5co-header #navbar li.active a span:before {
       visibility: visible;
       -webkit-transform: scaleX(1);
-      transform: scaleX(1); }
+      -ms-transform: scaleX(1);
+          transform: scaleX(1); }
   #fh5co-header .navbar-brand {
     float: left;
     display: block;
@@ -143,7 +138,6 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed !important;
     background: #fff;
     -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
     -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
     margin-top: 0px;
@@ -164,13 +158,12 @@ h1, h2, h3, h4, h5, h6 {
       #fh5co-header.navbar-fixed-top #navbar li.active a span:before {
         visibility: visible;
         -webkit-transform: scaleX(1);
-        transform: scaleX(1); }
+        -ms-transform: scaleX(1);
+            transform: scaleX(1); }
   #fh5co-header .navbar-default {
     border: transparent;
     background: transparent;
     -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -ms-border-radius: 0px;
     border-radius: 0px; }
     @media screen and (max-width: 768px) {
       #fh5co-header .navbar-default {
@@ -271,8 +264,6 @@ h1, h2, h3, h4, h5, h6 {
       background: #fff;
       position: relative;
       -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
       border-radius: 4px; }
       #fh5co-testimonials .box-testimony blockquote:after {
         content: "";
@@ -297,8 +288,6 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: -30px;
         background: #2185d5;
         -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
         border-radius: 50%; }
         #fh5co-testimonials .box-testimony blockquote .quote > span {
           display: table-cell;
@@ -320,8 +309,6 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   padding: 30px;
   -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
   border-radius: 5px;
   margin-bottom: 40px;
   position: relative; }
@@ -337,8 +324,6 @@ h1, h2, h3, h4, h5, h6 {
       background: #2185d5;
       color: #fff;
       -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
       border-radius: 4px; }
       #fh5co-pricing .price-box.popular .popular-text:after {
         content: "";
@@ -401,8 +386,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
     position: relative;
     -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
     border-radius: 50%;
     display: table;
     text-align: center; }
@@ -474,8 +457,6 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex;
   -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
   border-radius: 4px; }
   @media screen and (max-width: 480px) {
     #fh5co-press .fh5co-press-item {
@@ -512,7 +493,8 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     bottom: 0;
     top: 0;
-    background-size: cover; }
+    -webkit-background-size: cover;
+            background-size: cover; }
     @media screen and (max-width: 480px) {
       #fh5co-press .fh5co-press-item .fh5co-press-img {
         height: 200px;
@@ -544,6 +526,8 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     text-indent: -55px;
     background: #2185d5;
+    -webkit-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
     transition: all .2s ease-out; }
     .fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after {
       content: '';
@@ -574,17 +558,13 @@ h1, h2, h3, h4, h5, h6 {
 .fh5co-nav-toggle.active i::before {
   top: 0;
   -webkit-transform: rotateZ(45deg);
-  -moz-transform: rotateZ(45deg);
   -ms-transform: rotateZ(45deg);
-  -o-transform: rotateZ(45deg);
   transform: rotateZ(45deg); }
 
 .fh5co-nav-toggle.active i::after {
   bottom: 0;
   -webkit-transform: rotateZ(-45deg);
-  -moz-transform: rotateZ(-45deg);
   -ms-transform: rotateZ(-45deg);
-  -o-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg); }
 
 .fh5co-nav-toggle {
@@ -613,8 +593,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
     height: 150px;
     -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
     border-radius: 50%; }
   .person .name {
     font-size: 24px; }
@@ -643,7 +621,8 @@ h1, h2, h3, h4, h5, h6 {
     border: none !important;
     border: 2px solid transparent !important; }
     .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
-      box-shadow: none;
+      -webkit-box-shadow: none;
+              box-shadow: none;
       background: #2185d5; }
   .btn:hover, .btn:active, .btn:focus {
     background: #393e46 !important;
@@ -682,8 +661,6 @@ h1, h2, h3, h4, h5, h6 {
         background: #2185d5;
         color: #fff;
         -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
         border-radius: 50%; }
       .social li a:hover {
         background: #393e46 !important; }
@@ -694,8 +671,6 @@ h1, h2, h3, h4, h5, h6 {
     background: #2185d5;
     color: #fff;
     -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
     border-radius: 50%; }
 
 .owl-carousel .owl-controls .owl-nav {
@@ -820,7 +795,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .owl-carousel-fullwidth .item {
   background-repeat: no-repeat;
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-position: top left;
   position: relative; }
   .owl-carousel-fullwidth .item .overlay {
