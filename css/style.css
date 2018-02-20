@@ -168,23 +168,11 @@ p {
       position: absolute;
       z-index: 3;
       width: 100%;
-      top: 50%;
+      top: 60%;
       margin-top: -212px;
       text-align: center; }
-      #fh5co-home .flexslider .fh5co-text h1 {
-        margin: 0;
-        padding: 0;
-        font-family: "Playfair Display", serif;
-        font-size: 300px;
-        font-weight: 700;
-        font-style: italic;
-        color: #fff;
-        -webkit-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s; }
-        @media screen and (max-width: 992px) {
-          #fh5co-home .flexslider .fh5co-text h1 {
-            font-size: 100px; } }
+      #fh5co-home .flexslider .fh5co-text img {
+        width: 35%; }
       #fh5co-home .flexslider .fh5co-text h2 {
         margin: 0;
         padding: 0;
@@ -224,7 +212,8 @@ p {
 
 .fh5co-main-nav {
   position: relative;
-  background: #fff; }
+  background: #fff;
+  height: 70px; }
   .fh5co-main-nav.fh5co-shadow {
     -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
     -ms-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
@@ -269,6 +258,8 @@ p {
       .fh5co-main-nav .fh5co-logo a.active {
         color: #fb6e14; }
   .fh5co-main-nav .fh5co-menu-1 {
+    position: relative;
+    left: 9%;
     text-align: right;
     width: 40.33%; }
     .fh5co-main-nav .fh5co-menu-1 a {
@@ -283,10 +274,17 @@ p {
     .fh5co-main-nav .fh5co-logo a {
       position: relative;
       top: -5px;
-      display: inline-block; }
+      display: block;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      z-index: 10000; }
+      .fh5co-main-nav .fh5co-logo a img {
+        width: 0px; }
   .fh5co-main-nav .fh5co-menu-2 {
     text-align: left;
-    width: 40.33%; }
+    width: 40.33%;
+    position: relative;
+    right: 9%; }
 
 .fh5co-heading .heading {
   font-size: 50px;

@@ -282,7 +282,7 @@ p {
 			position: absolute;
 			z-index: 3;
 			width: 100%;
-			top: 50%;
+			top: 60%;
 			margin-top: -212px;
 			text-align: center;
 			
@@ -290,18 +290,21 @@ p {
 			@media screen and (max-width: $screen-sm) {
 				// margin-top: -66px;
 			}
-			h1 {
-				margin: 0;
-				padding: 0;
-				font-family: $font-primary;
-				font-size: 300px;
-				font-weight: 700;
-				font-style: italic;
-				color: $brand-white;
-				@include transition(.3s);
-				@media screen and (max-width: $screen-md) {
-					font-size: 100px;
-				}
+			// h1 {
+			// 	margin: 0;
+			// 	padding: 0;
+			// 	font-family: $font-primary;
+			// 	font-size: 300px;
+			// 	font-weight: 700;
+			// 	font-style: italic;
+			// 	color: $brand-white;
+			// 	@include transition(.3s);
+			// 	@media screen and (max-width: $screen-md) {
+			// 		font-size: 100px;
+			// 	}
+			// }
+			img {
+				width: 35%;
 			}
 			h2 {
 				margin: 0;
@@ -354,6 +357,7 @@ p {
 .fh5co-main-nav {
 	position: relative;
 	background: $brand-white;
+	height: 70px;
 	&.fh5co-shadow {
 		-webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, .3);
 		-moz-box-shadow: 0 0 7px 0 rgba(0, 0, 0, .3);
@@ -396,6 +400,8 @@ p {
 		}
 	}
 	.fh5co-menu-1 {
+		position: relative;
+		left: 9%;
 		text-align: right;
 		width: 40.33%;
 		a {
@@ -403,6 +409,7 @@ p {
 		}
 	}
 	.fh5co-logo {
+
 		text-align: center;
 		width: 19.33%;
 		font-size: 40px;
@@ -412,13 +419,21 @@ p {
 		a {
 			position: relative;
 			top: -5px;
-			display: inline-block;
-			// padding: 25px 10px;
+			display: block;
+			padding-top: 10px;
+			padding-bottom: 10px;
+    		z-index: 10000;
+			img {
+				width: 0px;
+			
+			}
 		}
 	}
 	.fh5co-menu-2 {
 		text-align: left;
 		width: 40.33%;
+		position: relative;
+		right: 9%;
 	}
 
 	

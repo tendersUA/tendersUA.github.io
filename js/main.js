@@ -143,6 +143,25 @@
 				'opacity' : (.5)+(scrollPos/2000)
 		   });
 
+		   //LOGO PARALAX
+		    if (scrollPos < 440) {
+				$('.fh5co-logo a img').css({
+					'width': 0 + scrollPos/3
+				});
+		    }
+
+		   //MENUS PARALAX
+		    if (scrollPos < 480) {
+				$('.fh5co-menu-1').css({
+						"left": 9 - scrollPos/55 + '%' 
+				});
+				$('.fh5co-menu-2').css({
+					"right": 9 - scrollPos/55 + '%' 
+			});
+			}
+			
+
+
 		   if (scrollPos > 300) {
 				$('#fh5co-home .fh5co-text').css('display', 'none');
 			} else {
