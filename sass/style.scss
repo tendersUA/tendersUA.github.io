@@ -75,6 +75,11 @@ $font-secondary: 'Merriweather', serif;;
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Neptun_Modern';
+	src:url('../fonts/Neptun_Modern.ttf');
+}
+
 @mixin icomoon() {
 	
 	font-family: 'icomoon';
@@ -357,7 +362,7 @@ p {
 .fh5co-main-nav {
 	position: relative;
 	background: $brand-white;
-	height: 70px;
+	height: 55px;
 	&.fh5co-shadow {
 		-webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, .3);
 		-moz-box-shadow: 0 0 7px 0 rgba(0, 0, 0, .3);
@@ -387,7 +392,7 @@ p {
 		float: left;
 		line-height: 0;
 		a {
-			padding: 35px 10px;
+			padding: 27px 10px;
 			color: #130d08;
 			@include inline-block;
 			&:hover, &:focus, &:active {
@@ -420,7 +425,7 @@ p {
 			position: relative;
 			top: -5px;
 			display: block;
-			padding-top: 10px;
+			padding-top: 5px;
 			padding-bottom: 10px;
     		z-index: 10000;
 			img {
@@ -436,6 +441,78 @@ p {
 		right: 9%;
 	}
 
+	.menu-order {
+		float: right;
+		margin-top: -85px;
+		margin-right: 15px;
+		a  {
+			display: inline-block;
+			padding: 3px 5px;
+			color: #fff;
+			font-size: 16px;
+			font-weight: 600;
+			border-radius: 0 0 6px 6px;
+			-webkit-transition: .4s;
+			transition: .4s;
+			background: #82c341;
+			z-index: 10000;
+    		position: relative;
+
+			&:hover {
+				padding-top: 10px;
+				text-decoration: none;
+		
+				svg {
+					width: 40px;
+					fill: #fff;
+					transition: transform 0.8s;
+					transform: scale(1.15);
+				}
+			}
+
+			&:focus, &:active {
+				text-decoration: none;
+			}
+		}
+			span {
+				color: map(colors, white, base);
+				font-size: 13px;
+				font-family: Neptun_Modern;
+				text-transform: none;
+				position: relative;
+				top: 25px;
+			}
+
+			.online {
+				font-size: 18px;
+				font-weight: 400;
+				position: relative;
+				left: 12px;
+				top: 10px;
+			}
+
+			svg {
+				position: relative;
+				top: 30px;
+				width: 40px;
+				fill: #fff;
+				transition: transform 0.8s;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+	}
+
+	.menu-order:hover {
+		svg #handle {
+			animation: 900ms linear infinite alternate shake;
+		}
+
+		svg #blade {
+			transform-origin: 14px 31px;
+			animation: 6000ms linear infinite spin;
+		}
+	}
 	
 }
 
@@ -1390,4 +1467,26 @@ p {
 
 .row-padded {
 	padding-bottom: 40px;
+}
+
+@keyframes spin {
+	from {
+	  	transform: rotate(0deg);
+	}
+  
+	to {
+	  transform: rotate(-360deg);
+	}
+  }
+
+@keyframes shake {
+from {
+	transform: rotate(0deg);
+	transform-origin: center center;
+}
+
+to {
+	transform: rotate(3deg);
+	transform-origin: center center;
+}
 }

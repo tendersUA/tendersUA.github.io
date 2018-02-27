@@ -5,6 +5,10 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Neptun_Modern';
+  src: url("../fonts/Neptun_Modern.ttf"); }
+
 body {
   font-family: "Merriweather", serif;
   font-size: 18px;
@@ -213,7 +217,7 @@ p {
 .fh5co-main-nav {
   position: relative;
   background: #fff;
-  height: 70px; }
+  height: 55px; }
   .fh5co-main-nav.fh5co-shadow {
     -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
     -ms-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
@@ -238,7 +242,7 @@ p {
     .fh5co-main-nav .fh5co-menu-1 a,
     .fh5co-main-nav .fh5co-menu-2 a,
     .fh5co-main-nav .fh5co-logo a {
-      padding: 35px 10px;
+      padding: 27px 10px;
       color: #130d08;
       display: -moz-inline-stack;
       display: inline-block;
@@ -275,7 +279,7 @@ p {
       position: relative;
       top: -5px;
       display: block;
-      padding-top: 10px;
+      padding-top: 5px;
       padding-bottom: 10px;
       z-index: 10000; }
       .fh5co-main-nav .fh5co-logo a img {
@@ -285,6 +289,75 @@ p {
     width: 40.33%;
     position: relative;
     right: 9%; }
+  .fh5co-main-nav .menu-order {
+    float: right;
+    margin-top: -85px;
+    margin-right: 15px; }
+    .fh5co-main-nav .menu-order a {
+      display: inline-block;
+      padding: 3px 5px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      -webkit-border-radius: 0 0 6px 6px;
+              border-radius: 0 0 6px 6px;
+      -webkit-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s;
+      background: #82c341;
+      z-index: 10000;
+      position: relative; }
+      .fh5co-main-nav .menu-order a:hover {
+        padding-top: 10px;
+        text-decoration: none; }
+        .fh5co-main-nav .menu-order a:hover svg {
+          width: 40px;
+          fill: #fff;
+          -webkit-transition: -webkit-transform 0.8s;
+          transition: -webkit-transform 0.8s;
+          -o-transition: transform 0.8s;
+          transition: transform 0.8s;
+          transition: transform 0.8s, -webkit-transform 0.8s;
+          -webkit-transform: scale(1.15);
+              -ms-transform: scale(1.15);
+                  transform: scale(1.15); }
+      .fh5co-main-nav .menu-order a:focus, .fh5co-main-nav .menu-order a:active {
+        text-decoration: none; }
+    .fh5co-main-nav .menu-order span {
+      color: map(colors, white, base);
+      font-size: 13px;
+      font-family: Neptun_Modern;
+      text-transform: none;
+      position: relative;
+      top: 25px; }
+    .fh5co-main-nav .menu-order .online {
+      font-size: 18px;
+      font-weight: 400;
+      position: relative;
+      left: 12px;
+      top: 10px; }
+    .fh5co-main-nav .menu-order svg {
+      position: relative;
+      top: 30px;
+      width: 40px;
+      fill: #fff;
+      -webkit-transition: -webkit-transform 0.8s;
+      transition: -webkit-transform 0.8s;
+      -o-transition: transform 0.8s;
+      transition: transform 0.8s;
+      transition: transform 0.8s, -webkit-transform 0.8s;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+  .fh5co-main-nav .menu-order:hover svg #handle {
+    -webkit-animation: 900ms linear infinite alternate shake;
+            animation: 900ms linear infinite alternate shake; }
+  .fh5co-main-nav .menu-order:hover svg #blade {
+    -webkit-transform-origin: 14px 31px;
+        -ms-transform-origin: 14px 31px;
+            transform-origin: 14px 31px;
+    -webkit-animation: 6000ms linear infinite spin;
+            animation: 6000ms linear infinite spin; }
 
 .fh5co-heading .heading {
   font-size: 50px;
@@ -1086,3 +1159,43 @@ p {
 
 .row-padded {
   padding-bottom: 40px; }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg); } }
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg); } }
+
+@-webkit-keyframes shake {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: center center;
+            transform-origin: center center; }
+  to {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+    -webkit-transform-origin: center center;
+            transform-origin: center center; } }
+
+@keyframes shake {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: center center;
+            transform-origin: center center; }
+  to {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+    -webkit-transform-origin: center center;
+            transform-origin: center center; } }
