@@ -363,6 +363,7 @@ p {
 	position: relative;
 	background: $brand-white;
 	height: 55px;
+	border-bottom: 4px solid lighten($brand-black, 90%);
 	&.fh5co-shadow {
 		-webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, .3);
 		-moz-box-shadow: 0 0 7px 0 rgba(0, 0, 0, .3);
@@ -384,6 +385,7 @@ p {
 	}
 	&:after {
 		bottom: 2px;
+		display: none;
 	}
 	.fh5co-menu-1,
 	.fh5co-menu-2,
@@ -403,6 +405,13 @@ p {
 				color: $brand-primary;
 			}
 		}
+	}
+
+	.location-icon {
+		float: left;
+		// margin-top: -85px;
+		margin-left: 15px;
+		
 	}
 	.fh5co-menu-1 {
 		position: relative;

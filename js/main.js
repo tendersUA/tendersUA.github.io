@@ -148,7 +148,13 @@
 				$('.fh5co-logo a img').css({
 					'width': 0 + scrollPos/3
 				});
-		    }
+				$('div.menu-order').removeClass('slideOutUp animated');
+				$('div.menu-order').addClass('slideInDown animated');
+			}
+			
+			if (scrollPos > 440) {
+				$('div.menu-order').addClass('slideOutUp animated');
+			}
 
 		   //MENUS PARALAX
 		    if (scrollPos < 480) {
@@ -159,6 +165,8 @@
 					"right": 9 - scrollPos/55 + '%' 
 			});
 			}
+
+
 			
 
 
@@ -246,7 +254,9 @@
 
 		$section.waypoint(function(direction) {
 		  	if (direction === 'up') {
-		    	navActive($(this.element).data('section'));
+				navActive($(this.element).data('section'));
+				// $("div.menu-order").removeClass('slideOutUp animated');
+				// $("div.menu-order").addClass('slideInDown');
 		  	}
 		}, {
 		  	offset: function() { return -$(this.element).height() + 155; }
@@ -258,7 +268,6 @@
 	// Animations
 	var homeAnimate = function() {
 		if ( $('#fh5co-home').length > 0 ) {	
-
 			$('#fh5co-home').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
@@ -275,7 +284,8 @@
 						});
 					}, 200);
 
-					
+					// $("div.menu-order").addClass('slideInDown animated');
+	
 					$(this.element).addClass('animated');
 						
 				}
@@ -317,8 +327,9 @@
 						});
 					}, 200);
 
+					// $("div.menu-order").removeClass('slideInDown animated');
+					// $("div.menu-order").addClass('slideOutUp');
 					
-
 					$(this.element).addClass('animated');
 						
 				}
@@ -346,7 +357,6 @@
 							
 						});
 					}, 200);
-
 
 					$(this.element).addClass('animated');
 						
